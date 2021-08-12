@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legascii</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js" defer></script>
+    <script src="scripts/animation.js" defer></script>
+    <script src="scripts/validator.js" defer></script>
+    <script src="scripts/navScroll.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="container">
+                <div class="menu-container">
+                    <img id='open' class="open-menu" src="images/Menu.svg" alt="Menu for navigation">
+                </div>
+                <nav>
+                    <img id='close' class="close-menu" src="images/exit.svg" alt="Exit out of navigation">
+                    <ul class="navigation-items">
+                        <li class="nav-item"><button data-section="section1">Home</button></li>
+                        <li class="nav-item"><button data-section="section2">Projects</button></li>
+                        <li class="nav-item"><button data-section="section3">About Me</button></li>
+                        <li class="nav-item"><button data-section="section4">Contact Me</button></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="section1" class="hero">
+            <div class="container">
+                <div class="logo-container">
+                    <img class="logo" src="images/Logo.svg" alt="Logo">
+                </div>
+                <div class="second-half-hero">
+                    <div class="text-container">
+                        <h4>Legascii</h4>
+                        <h1>Making websites for others</h1> 
+                        <p>Frontend developer</p>
+    
+                    </div>
+                    
+                    <div class="scroll-indicator-container">
+                        <button id='scrollSecondary' class="scroll-indicator">
+                            <div class="scroll-wheel"></div>
+                        </button>
+                    </div>   
+                </div>
+            </div>
+        </section>
+        <section id="section2" class="project-sect">
+            <div class="container">
+                <h1>Projects</h1>
+                <div class="project-cards">
+                    <ul class="project-items">
+                        <li class="proj-item">Lorem Ipsum</li>
+                        <li class="proj-item">Lorem Ipsum</li>
+                        <li class="proj-item">Lorem Ipsum</li>
+                        <li class="proj-item">Lorem Ipsum</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+            <section id="section3" class="about-sect">
+                <div class="container">
+                    <h1>About</h1>
+                    <div class="paragraph-container">
+                        <p>よく おいでくださいました(Really nice of you to come), My hobby is learning Japanese and web development. I enjoy learning new and better ways of front end web development. Love to play game, watch anime, study Japanese and learn coding.</p>
+                    </div>
+                </div>
+            </section>
+            <section id="section4" class="contact-sect">
+                <div class="container">
+                    <h1>Contact Me!</h1>
+                    <form action="/" method="post">
+                        <div class="secondaryContainer">
+                            <label for="name">Name</label>
+                            <div id="error-name" class="error-message"></div>
+                        </div>
+                        <input class="name" id="name" type="text">
+    
+                        <div class="secondaryContainer">
+                            <label for="email">Email</label>
+                            <div id="error-email" class="error-message"></div>
+                        </div>
+                        <input class="email" id="email" type="email">
+    
+                        <div class="secondaryContainer">
+                            <label for="message">Message</label>
+                            <div id="error-message" class="error-message"></div>  
+                        </div>
+                        <textarea name="message" id="message" rows="1" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'></textarea>
+                        
+                        <button id="submitBtn" class="submit-btn" type="submit" form="contact" value="Submit">Submit</button>
+                    </form>
+                </div>
+            </section>
+        
+        <section class="landing">
+            <div class="landing-text">
+                <h1 class="hide">
+                    <span class="text">A frontend developer.</span>
+                </h1>
+                <h1 class="hide">
+                    <span class="text">Gets the job done.</span>
+                </h1>
+                <h1 class="hide">
+                    <span class="text">Effectively and efficently.</span>
+                </h1>       
+            </div>
+            <div class="slider">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <small>© 2021 | Legascii | All rights reserved</small>
+    </footer>
+</body>
+</html>
