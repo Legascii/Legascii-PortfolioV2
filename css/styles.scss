@@ -31,6 +31,10 @@ h1 {
     text-transform: uppercase;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+
 body {
     background-color: color(bodyBackground);
 
