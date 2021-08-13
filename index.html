@@ -76,24 +76,24 @@
             <section id="section4" class="contact-sect">
                 <div class="container">
                     <h1>Contact Me!</h1>
-                    <form action="/" method="post">
+                    <form action="https://formspree.io/f/xleapvza" method="POST">
                         <div class="secondaryContainer">
                             <label for="name">Name</label>
                             <div id="error-name" class="error-message"></div>
                         </div>
-                        <input class="name" id="name" type="text">
+                        <input name="FromName:" class="name" id="name" type="text">
     
                         <div class="secondaryContainer">
                             <label for="email">Email</label>
                             <div id="error-email" class="error-message"></div>
                         </div>
-                        <input class="email" id="email" type="email">
+                        <input name="FromEmail:" class="email" id="email" type="email">
     
                         <div class="secondaryContainer">
                             <label for="message">Message</label>
                             <div id="error-message" class="error-message"></div>  
                         </div>
-                        <textarea name="message" id="message" rows="1" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'></textarea>
+                        <textarea name="Message:" name="message" id="message" rows="1" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'></textarea>
                         
                         <button id="submitBtn" class="submit-btn" type="submit" form="contact" value="Submit">Submit</button>
                     </form>
